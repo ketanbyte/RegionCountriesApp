@@ -1,11 +1,11 @@
-import MainFile from "./MainFile";
+import MainFile from "../Component/MainFile";
 import { shallow } from "enzyme";
 import HeaderFile from "../Component/TeamOmegaHeader";
 import RegionDropDown from '../Component/TeamOmegaDropDown'
 import CountryDropDown from '../Component/TeamOmegaCountryDropDown'
-import store from '../Store/store'
+import Store from '../store/Store'
 
-const setUp = shallow(<MainFile store={store} />).childAt(0).dive();
+const setUp = shallow(<MainFile store={Store} />).childAt(0).dive();
 
 describe('Mainfile-test', () => {
   let component, wrapper;
@@ -61,7 +61,7 @@ describe('Mainfile-test', () => {
       wrapper = component.find(CountryDropDown)
 
     })
-    it('APP should contain countrydata', () => {
+    it('App should contain countrydata', () => {
       expect(wrapper.exists()).toEqual(true);
     });
     

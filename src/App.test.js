@@ -1,6 +1,6 @@
 import App from './App';
 import { shallow } from 'enzyme';
-import MainFile from './container/MainFile'
+import MainFile from './Component/MainFile'
 
 
 const setUp = shallow(<App />);

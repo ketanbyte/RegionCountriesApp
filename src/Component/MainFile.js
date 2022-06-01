@@ -1,7 +1,7 @@
 import React from "react";
-import CountryDropDown from '../Component/TeamOmegaCountryDropDown';
-import RegionDropDown from '../Component/TeamOmegaDropDown';
-import HeaderFile from "../Component/TeamOmegaHeader";
+import CountryDropDown from './TeamOmegaCountryDropDown';
+import RegionDropDown from './TeamOmegaDropDown';
+import HeaderFile from "./TeamOmegaHeader";
 import { connect } from "react-redux";
 import { getusers } from "../Action/Action";
 import "../App.css";
