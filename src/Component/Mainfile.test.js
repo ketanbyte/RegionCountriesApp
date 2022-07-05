@@ -17,7 +17,7 @@ describe('Mainfile-test', () => {
 
     it("Should render without errors", () => {
       let wrapper = component.find(`[data-test="Main"]`);
-      expect(wrapper.length).toBe(1);//error w op
+      expect(wrapper.length).toBe(1);
     });
 
   });
@@ -52,7 +52,7 @@ describe('Mainfile-test', () => {
 
     })
     it('APP should contain regiondata', () => {
-      expect(wrapper.exists()).toEqual(true);   //sinon.spy
+      expect(wrapper.exists()).toEqual(true);  
     });
   });
 
