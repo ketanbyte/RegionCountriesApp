@@ -10,14 +10,14 @@ const setUp = shallow(<MainFile store={store} />).childAt(0).dive();
 describe('Mainfile-test', () => {
   let component, wrapper;
   beforeAll(() => {
-    component = setUp;
+    component = setUp; 
   });
 
   describe('Render All data', () => {
 
     it("Should render without errors", () => {
-      let wrapper = component.find(`[data-test="Main_Component"]`);
-      expect(wrapper.length).toBe(1);
+      let wrapper = component.find(`[data-test="Main"]`);
+      expect(wrapper.length).toBe(1);//error w op
     });
 
   });
@@ -52,7 +52,7 @@ describe('Mainfile-test', () => {
 
     })
     it('APP should contain regiondata', () => {
-      expect(wrapper.exists()).toEqual(true);
+      expect(wrapper.exists()).toEqual(true);   //sinon.spy
     });
   });
 

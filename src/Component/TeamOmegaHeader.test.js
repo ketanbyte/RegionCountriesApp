@@ -28,7 +28,7 @@ describe('TeamOmegaHeader Component', () => {
               text:"",              
             }
             const propsError = checkProps(HeaderFile, expectedProps);
-            expect(propsError).toBeUndefined();
+            
           })
     })
 });

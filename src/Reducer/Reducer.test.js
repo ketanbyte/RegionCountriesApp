@@ -21,7 +21,7 @@ describe('Reducer test', () => {
   it('-->return new state with error if pass type USERS_ERROR', () => {
     let message = "Found Error"
     const newState = fetchreducer(undefined, {
-      type: USERS_ERROR,
+      type: USERS_ERROR,    
       payload: message
     });
     expect(newState.error).toEqual(message);

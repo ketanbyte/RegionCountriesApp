@@ -1,6 +1,6 @@
 import App from './App';
 import { shallow } from 'enzyme';
-import MainFile from './Component/MainFile'
+import MainFile from './MainFile';
 
 
 const setUp = shallow(<App />);
@@ -14,7 +14,7 @@ describe('App-test', () => {
   describe('Render All data', () => {
 
     it("Should render without errors", () => {
-      let wrapper = component.find(`[data-test="App_Component"]`);
+      let wrapper = component.find(`[data-test="App"]`);
       expect(wrapper.length).toBe(1);
     });
 

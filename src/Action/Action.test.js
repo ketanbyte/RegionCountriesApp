@@ -9,13 +9,13 @@ const middlewares = [thunk];
 const mockStore = configureStore(middlewares);
 
 
-describe('-->CountryAction ', () => {
+describe('CountryAction ', () => {
 
     beforeEach(() => moxios.install());
 
     afterEach(() => moxios.uninstall());
 
-    describe('-->fething data', () => {
+    describe('fething data', () => {
 
         let continent = "asia";
 
@@ -48,7 +48,6 @@ describe('-->CountryAction ', () => {
         return storeData.dispatch(getusers())
         .then(()=>{
             const actions = storeData.getActions();
-            console.log("actions",actions)
             expect(actions[0].type).toEqual(GET_USERS);
         })
 
@@ -59,6 +58,7 @@ describe('-->CountryAction ', () => {
             status: 404,
             response: { message: 'Bad request' }
         }
+
         moxios.wait(() => {
 
             let request = moxios.requests.mostRecent()
@@ -69,28 +69,23 @@ describe('-->CountryAction ', () => {
         return storeData.dispatch(getusers())
         .then(()=>{
             const actions = storeData.getActions();
-            console.log("error action",actions);
             expect(actions[1].type).toEqual(USERS_ERROR);
         })
      })    
 
-        it('updated state.countries', () => {
+        it('updated state countries', () => {
 
             moxios.wait(() => {
                 const request = moxios.requests.mostRecent();
                 request.respondWith({ status: 200, response: expectedState });
             });
+
             return store.dispatch(getusers(continent))
                 .then(() => {
-                    // console.log(store.getState());
-                    let { users } = store.getState().users;
-
+                  let { users } = store.getState().users;
                     expectedState = expectedState.map(item => item.name.common)
-
                     let bool = users == expectedState;
-
                     expect(bool).toBeTrue;
-
                 })
         });
 
@@ -101,6 +96,7 @@ describe('-->CountryAction ', () => {
                 status: 404,
                 response: { message: 'Bad request' }
             }
+
             moxios.wait(() => {
 
                 let request = moxios.requests.mostRecent()
@@ -108,8 +104,6 @@ describe('-->CountryAction ', () => {
 
             })
             return store.dispatch(getusers("")).then(() => {
-                console.log(store.getState());
-
                 const error = store.getState().users.error;
 
                 expect(error).toEqual(errorResp.response.message);
@@ -126,16 +120,12 @@ describe('-->CountryAction ', () => {
             moxios.wait(() => {
 
                 let request = moxios.requests.mostRecent()
-
                 request.reject(errorResp)
 
             })
             return store.dispatch(getusers("")).then(() => {
 
-                console.log(store.getState());
-
                 const error = store.getState().users.error;
-
                 expect(error).toEqual(errorResp.response.message);
 
             })

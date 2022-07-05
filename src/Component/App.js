@@ -1,14 +1,13 @@
 import React  from "react";
-import './App.css'
-import MainFile from "./Component/MainFile";
+import '../App.css'
+import MainFile from "./MainFile";
 
 
 class App extends React.Component{
   
-
    render(){
      return(
-       <div className="App" data-test="App_Component">
+       <div className="App" data-test="App">
       
        <MainFile/>
        </div>

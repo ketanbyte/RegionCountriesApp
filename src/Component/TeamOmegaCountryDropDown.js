@@ -4,7 +4,9 @@ import { connect } from "react-redux";
 import "./Dropdown.css";
 
 class CountryDropDown extends React.Component {
+
     dropdownhandler=(e)=>{ return;}
+    
     render() {
         const { country, error } = this.props
 
@@ -13,11 +15,9 @@ class CountryDropDown extends React.Component {
                 {
                     error!== "" && alert("Error 404",error)
                 }{
-                 country.length > 0 &&
-                 <select id="w">
+                 country.length > 0 && <select id="w">
                  {
-                     country.map(val => {
-                         return (<option key={val.name.official}>{val.name.common}</option>)})
+                     country.map(val => { return (<option key={val.name.official}>{val.name.common}</option>)})
                  }
              </select>
                 }
@@ -26,6 +26,8 @@ class CountryDropDown extends React.Component {
         );
     }
 };
+
+
 
 
 

@@ -1,11 +1,19 @@
 #w{
-    width:350px;
+    width: 350px;
+
     border-radius: 15px;
-    padding: 5px 25px 5px 5px;
+    padding: 5px 5px 5px 5px;
     border: 1px solid #999;
     font-size: 18px;
     font-style: italic;
     color: white;
     background-color: #02081aec;
-    align-items: center;
    }
+
+
+
+  .lable{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: large;
+  }

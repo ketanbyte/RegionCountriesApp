@@ -24,12 +24,12 @@ class User extends React.Component {
     changeRegion = (region) => {
         this.props.getusers(region)
        
-    }
+    }  //fun para
     
     render() {
       
         return (
-            <main data-test="Main_Component">
+            <main data-test="Main">
                
                 <div>
 

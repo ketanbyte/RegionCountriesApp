@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1654060057916" clover="3.2.0">
-  <project timestamp="1654060057916" name="All files">
-    <metrics statements="44" coveredstatements="39" conditionals="8" coveredconditionals="6" methods="22" coveredmethods="18" elements="74" coveredelements="63" complexity="0" loc="44" ncloc="44" packages="7" files="13" classes="13"/>
+<coverage generated="1654236310104" clover="3.2.0">
+  <project timestamp="1654236310104" name="All files">
+    <metrics statements="46" coveredstatements="42" conditionals="8" coveredconditionals="6" methods="24" coveredmethods="19" elements="78" coveredelements="67" complexity="0" loc="46" ncloc="46" packages="6" files="12" classes="12"/>
     <package name="src">
-      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="App.js" path="C:\Users\ketan.pandit\countries\src\App.js">
-        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="10" count="1" type="stmt"/>
-      </file>
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="index.js" path="C:\Users\ketan.pandit\countries\src\index.js">
         <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
@@ -23,12 +19,12 @@
       </file>
       <file name="type.js" path="C:\Users\ketan.pandit\countries\src\Action\type.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="1" count="5" type="stmt"/>
-        <line num="3" count="5" type="stmt"/>
+        <line num="1" count="8" type="stmt"/>
+        <line num="3" count="8" type="stmt"/>
       </file>
     </package>
     <package name="src.Component">
-      <metrics statements="18" coveredstatements="17" conditionals="4" coveredconditionals="2" methods="10" coveredmethods="8"/>
+      <metrics statements="26" coveredstatements="24" conditionals="4" coveredconditionals="2" methods="16" coveredmethods="13"/>
       <file name="App.Mock.js" path="C:\Users\ketan.pandit\countries\src\Component\App.Mock.js">
         <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
         <line num="2" count="3" type="stmt"/>
@@ -37,56 +33,11 @@
         <line num="8" count="3" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
       </file>
-      <file name="TeamOmegaCountryDropDown.js" path="C:\Users\ketan.pandit\countries\src\Component\TeamOmegaCountryDropDown.js">
-        <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="2"/>
-        <line num="7" count="1" type="stmt"/>
-        <line num="9" count="1" type="stmt"/>
-        <line num="11" count="1" type="stmt"/>
-        <line num="20" count="0" type="stmt"/>
-        <line num="32" count="3" type="stmt"/>
+      <file name="App.js" path="C:\Users\ketan.pandit\countries\src\Component\App.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="9" count="2" type="stmt"/>
       </file>
-      <file name="TeamOmegaDropDown.js" path="C:\Users\ketan.pandit\countries\src\Component\TeamOmegaDropDown.js">
-        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="11" count="4" type="stmt"/>
-        <line num="12" count="4" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="16" count="16" type="stmt"/>
-        <line num="26" count="3" type="stmt"/>
-      </file>
-      <file name="TeamOmegaHeader.js" path="C:\Users\ketan.pandit\countries\src\Component\TeamOmegaHeader.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="7" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="21" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.Reducer">
-      <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <file name="Reducer.js" path="C:\Users\ketan.pandit\countries\src\Reducer\Reducer.js">
-        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="8" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="9" count="15" type="cond" truecount="3" falsecount="0"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="15" count="3" type="stmt"/>
-        <line num="20" count="10" type="stmt"/>
-      </file>
-      <file name="RootReducer.js" path="C:\Users\ketan.pandit\countries\src\Reducer\RootReducer.js">
-        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      </file>
-    </package>
-    <package name="src.Store">
-      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-      <file name="store.js" path="C:\Users\ketan.pandit\countries\src\Store\store.js">
-        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
-        <line num="6" count="3" type="stmt"/>
-        <line num="8" count="3" type="stmt"/>
-        <line num="10" count="3" type="stmt"/>
-      </file>
-    </package>
-    <package name="src.container">
-      <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
-      <file name="MainFile.js" path="C:\Users\ketan.pandit\countries\src\container\MainFile.js">
+      <file name="MainFile.js" path="C:\Users\ketan.pandit\countries\src\Component\MainFile.js">
         <metrics statements="7" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="4"/>
         <line num="13" count="1" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
@@ -94,16 +45,61 @@
         <line num="24" count="1" type="stmt"/>
         <line num="25" count="0" type="stmt"/>
         <line num="31" count="1" type="stmt"/>
-        <line num="58" count="2" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
+      </file>
+      <file name="TeamOmegaCountryDropDown.js" path="C:\Users\ketan.pandit\countries\src\Component\TeamOmegaCountryDropDown.js">
+        <metrics statements="5" coveredstatements="4" conditionals="4" coveredconditionals="2" methods="4" coveredmethods="2"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="34" count="5" type="stmt"/>
+      </file>
+      <file name="TeamOmegaDropDown.js" path="C:\Users\ketan.pandit\countries\src\Component\TeamOmegaDropDown.js">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="11" count="4" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="16" count="16" type="stmt"/>
+        <line num="26" count="5" type="stmt"/>
+      </file>
+      <file name="TeamOmegaHeader.js" path="C:\Users\ketan.pandit\countries\src\Component\TeamOmegaHeader.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="7" count="3" type="stmt"/>
+        <line num="8" count="3" type="stmt"/>
+        <line num="21" count="5" type="stmt"/>
       </file>
     </package>
-    <package name="src.test">
-      <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-      <file name="testUtlis.js" path="C:\Users\ketan.pandit\countries\src\test\testUtlis.js">
-        <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-        <line num="5" count="0" type="stmt"/>
-        <line num="6" count="0" type="stmt"/>
-        <line num="7" count="0" type="stmt"/>
+    <package name="src.Reducer">
+      <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+      <file name="Reducer.js" path="C:\Users\ketan.pandit\countries\src\Reducer\Reducer.js">
+        <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="8" count="6" type="cond" truecount="1" falsecount="0"/>
+        <line num="9" count="21" type="cond" truecount="3" falsecount="0"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
+        <line num="20" count="16" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.Store">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="store.js" path="C:\Users\ketan.pandit\countries\src\Store\store.js">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="6" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.container">
+      <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+      <file name="container.js" path="C:\Users\ketan.pandit\countries\src\container\container.js">
+        <metrics statements="5" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="1"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="0" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
       </file>
     </package>
   </project>

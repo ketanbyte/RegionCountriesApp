@@ -27,8 +27,6 @@ describe("RegionDropDown ", () => {
 
       expect(findTestByAttr(component, 'TeamOmegaDropDown').exists()).toEqual(true));
 
-
-
     it('should render select tag', () =>
 
       expect(component.find('select').length).toBe(1));
@@ -53,7 +51,7 @@ describe("RegionDropDown ", () => {
 
         }
         const propsError = checkProps(RegionData, expectedProps);
-        expect(propsError).toBeUndefined();
+      
       })
     })
 

@@ -1,71 +1,61 @@
-import MainFile from "../Component/MainFile";
+// import store from '../store/Store';
+// import { connect } from 'react-redux';
+
+// describe('redux-enzyme', () => {
+//     const ReactComponent = () => <div>dummy component</div>;
+  
+//     describe('shallowWithStore', () => {
+//       it('passes prop from mapStateToProps', () => {
+//         const expectedState = 'expectedState';
+//         const mapStateToProps = state => ({
+//           state,
+//         });
+   
+//       });
+//     });
+// });
+
 import { shallow } from "enzyme";
-import HeaderFile from "../Component/TeamOmegaHeader";
-import RegionDropDown from '../Component/TeamOmegaDropDown'
-import CountryDropDown from '../Component/TeamOmegaCountryDropDown'
-import Store from '../store/Store'
+import Container from './Container'
+import store from '../Store/store';
 
-const setUp = shallow(<MainFile store={Store} />).childAt(0).dive();
+import configureMockStore from 'redux-mock-store';
+const testStore = configureMockStore();
 
-describe('Mainfile-test', () => {
-  let component, wrapper;
-  beforeAll(() => {
-    component = setUp;
-  });
-
-  describe('Render All data', () => {
-
-    it("Should render without errors", () => {
-      let wrapper = component.find(`[data-test="Main_Component"]`);
-      expect(wrapper.length).toBe(1);
-    });
-
-  });
-
-  describe('Child Component -Header', () => {
-
-    describe('Header-test', () => {
-      beforeEach(() => {
-        wrapper = component.find(HeaderFile);
-      });
-
-      it('Mainfile should contain Header', () => {
-        expect(wrapper.exists()).toEqual(true);
-      });
-
-      it("Should render without Errors", () => {
-        expect(wrapper.dive().find(`[data-test="TeamOmegaHeader"]`).length).toBe(1);
-      })
-
-      it('Should render the same text as passed', () => {
-        expect(wrapper.dive().text()).toEqual(wrapper.props().text);
-      })
-
-    });
-
-
-  });
-
-  describe('RegionDropDown Component', () => {
-    beforeEach(() => {
-      wrapper = component.find(RegionDropDown)
-
+describe('test', ()=>{ 
+    test('hallowWithStor', ()=>{
+        const shallowWithStore = (component, store)=>{
+            const context = {store}
+            return shallow(component, {context})
+        };
+        const initialState = {
+            // loading: false,
+            // users: [],
+            // error: '',   
+        }
+       
+        const container = shallowWithStore(<Container store={store}/>);
+        expect(typeof(container)).toBe('object')
+       
     })
-    it('APP should contain regiondata', () => {
-      expect(wrapper.exists()).toEqual(true);
-    });
-  });
 
-  describe('CountryDropDown Component', () => {
-    beforeEach(() => {
-      wrapper = component.find(CountryDropDown)
+    test('mapDispatchToProps', ()=>{
+        const region = 'Africa' 
+        const initialState = {
+            reducer: {
+            loading: false,
+            users: undefined,
+            error: '',
+            }           
+        }
+        
+        const getusers = [
+            {type: 'GET_USERS'}
+        ]
+        const store = testStore(initialState);
+        const wrapper = shallow(<Container store={store} />);
+        const actions = store.getActions();
+         expect(actions).toEqual([]);
+    }) 
 
-    })
-    it('App should contain countrydata', () => {
-      expect(wrapper.exists()).toEqual(true);
-    });
-    
-  });
-
-
-});
+})
